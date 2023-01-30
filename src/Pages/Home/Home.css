@@ -1,0 +1,25 @@
+.MusicianHomePage {
+  text-align: center;
+    background: linear-gradient(to bottom, #ffa6a6, #ff66cc);
+    text-align: center;
+  }
+  
+
+.ProfilePicture {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.NavList {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.NavItem {
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: blue;
+}
