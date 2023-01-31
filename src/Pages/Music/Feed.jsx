@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CreatePost from "../Components/Post/CreatePost";
+import CreatePost from "../../Components/Post/CreatePost";
 import { useNavigate } from 'react-router-dom'
 
 function Feed() {
@@ -10,7 +10,7 @@ function Feed() {
 
   // Function to fetch the list of posts from the backend API
   async function fetchPosts() {
-    const res = await fetch("http://localhost:4000/posts");
+    const res = await fetch("http://localhost:4000/post");
     const data = await res.json();
     setPosts(data);
   }

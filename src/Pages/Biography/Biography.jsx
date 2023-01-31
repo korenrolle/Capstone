@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import './style/biography.css';
-import CreatePost from '../../components/Post/CreatePost';
+import CreatePost from '../../Components/Post/CreatePost';
 
 const Biography = (props) => {
     return <>

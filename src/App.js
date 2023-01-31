@@ -1,14 +1,13 @@
 import './App.css';
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import Biography from './Pages/Biography/Biography';
 import Gallery from './Pages/Gallery/Gallery';
-import CreatePost from './components/Post/CreatePost';
+import Feed from './Pages/Music/Feed';
 
 function App() {
   const URL = 'http://localhost:4000/';
@@ -18,10 +17,10 @@ function App() {
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About URL={URL} />} />
-        <Route path="/biography" component={Biography} />
-        <Route path="/gallery" component={Gallery} />
-        <Route path="/create" component={CreatePost} />
+        <Route path="/about" element={<Biography />} />
+        <Route path="/biography" element={Biography} />
+        <Route path="/gallery" element={Gallery} />
+        <Route path="/create" element={<Feed />} />
       </Routes>
       <Footer />
     </div>
