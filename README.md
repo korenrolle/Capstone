@@ -6,24 +6,16 @@ I will be able to log into my website and post on the "post" page
 
 Home-Page: Displays a brief introduction to ChylMusic, a banner image, and a list of quotes as an musician.
 
-# ERD
-      +-----------+     
-      |   User    |     
-      +-----------+     
-      | - id      |     
-      | - name    |     
-      | - email   |     
-      | - password|     
-      +-----------+     
-            |              
-            |               
-      +-----------+     
-      |   Login   |     
-      +-----------+     
-      | - user_id |     
-      | - date    |     
-      +-----------+     
-
++----------------+ +----------------+ +----------------+
+| Super User | | Post | | Comment |
++----------------+ +----------------+ +----------------+
+| - id | | - id | | - id |
+| - username | | - title | | - author |
+| - password | | - body | | - text |
+| - email | | - createdAt | | - createdAt |
++----------------+ | - updatedAt | +----------------+
+| - author (FK) |
++----------------+
 
 Music-Page: Features ChylMusic's discography, including album covers, tracklists, and links to purchase or stream the music. <--(stretch)
 
@@ -33,7 +25,7 @@ Contact: Provides a contact form for fans to reach out to ChylMusic and a list o
 
 -This project is built using React, a JavaScript library for building user interfaces. The website utilizes React Router for client-side routing and is designed to be responsive and mobile-friendly.
 
-User Stories for overall project: 
+User Stories for overall project:
 
 As a user, I want to be able to easily navigate the website to find information about the musician, such as their biography, music, and upcoming shows.
 As a user, I want the website to be visually pleasing and easy on the eyes.
@@ -72,7 +64,7 @@ Day 3:
 
 Continue to work on the front-end, adding more functionality and styling to make the website visually appealing.
 Implement CRUD functionality for the second model, testing all functionalities to ensure everything is working properly.
-Write code to handle errors gracefully and provide useful feedback to users.
+Write code to handle errors gracefully and provide useful Musicback to users.
 
 Day 4:
 
