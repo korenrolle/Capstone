@@ -13,7 +13,7 @@ const Post = (props) => {
         title: "",
     })
     // fetch endpoint
-    const BASE_URL = "http://localhost:4000/post/${id}"
+    const BASE_URL = "http://localhost:4000/post/"
 
     // create some local state for tracking post input (user) ++
     // link this state to a controlled form (post) ++
@@ -128,7 +128,6 @@ const Post = (props) => {
         <div>
     <h1>Create Post</h1>
     <section className='postForm'>
-            <h2>Create A New Post</h2>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor='name'>
