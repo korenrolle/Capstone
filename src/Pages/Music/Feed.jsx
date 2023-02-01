@@ -17,6 +17,7 @@ function Feed() {
       }
       const data = await res.json();
       setPosts(data);
+      console.log(data)
     } catch (error) {
       console.error(error);
     }
@@ -30,7 +31,7 @@ function Feed() {
   async function handleCommentSubmit(postId, comment) {
     try {
       // Send the comment to the backend API
-      const res = await fetch(`/posts/${postId}/comments`, {
+      const res = await fetch(`http://localhost:4000/post/${postId}/comments`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -50,8 +51,9 @@ function Feed() {
   // Function to handle delete a post
   async function handleDeletePost(postId) {
     try {
+      console.log(`/Post/${postId}`)
       // Send the delete request to the backend API
-      const res = await fetch(`/posts/${postId}`, {
+      const res = await fetch(`http://localhost:4000/post/${postId}`, {
         method: "DELETE",
       });
       if (!res.ok) {
@@ -68,15 +70,16 @@ function Feed() {
     <div>
       <CreatePost fetchPosts={fetchPosts} />
       {posts.map((post) => (
-        <div key={post.id}>
+        <div key={post._id}>
           <img src={post.image} alt={post.title} />
           <h3>{post.title}</h3>
+          <h3>{post._id }</h3>
           <p>{post.description}</p>
           <form onSubmit={(event) => handleCommentSubmit(post.id, event.target.comment.value)}>
             <input type="text" name="comment" />
             <button type="submit">Comment</button>
           </form>
-          <button onClick={() => handleDeletePost(post.id)}>Delete</button>
+          <button onClick={() => handleDeletePost(post._id)}>Delete</button>
         </div>
       ))}
     </div>

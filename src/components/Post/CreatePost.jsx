@@ -1,6 +1,7 @@
 // import './Post.css'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 const Post = (props) => {
     // define our state variable - []
@@ -12,7 +13,7 @@ const Post = (props) => {
         title: "",
     })
     // fetch endpoint
-    const BASE_URL = "http://localhost:4000/post"
+    const BASE_URL = "http://localhost:4000/post/${id}"
 
     // create some local state for tracking post input (user) ++
     // link this state to a controlled form (post) ++
