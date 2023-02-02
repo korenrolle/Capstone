@@ -35,7 +35,6 @@ function Feed() {
       // Send the comment to the backend API
       const res = await fetch(`http://localhost:4000/post/comments/${postId}`, {
         method: "POST",
-        
         body: JSON.stringify({ comment }),
       });
       if (!res.ok) {

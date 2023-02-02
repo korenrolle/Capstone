@@ -1,7 +1,7 @@
 // import './Post.css'
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { useParams } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
+// import { useParams } from 'react-router-dom'
 
 const Post = (props) => {
     // define our state variable - []
@@ -43,7 +43,7 @@ const Post = (props) => {
 
     const handleSubmit = async (e) => {
         // 0. prevent default (event object method)
-        e.preventDefault()
+        // e.preventDefault()
         // 1. capturing our local state
         const currentState = { ...newForm }
         // check any fields for property data types / truthy value (function call - stretch)
@@ -73,62 +73,29 @@ const Post = (props) => {
                 image: "",
                 title: "",
             })
+            // getPost()
+            
 
         } catch (err) {
             console.log(err)
         }
     }
 
-    // const loaded = () => {
-    //     return (<>
-    //         <section className="post-list">
-    //             {post?.map((singlePost) => {
-    //                 return (
-    //                     <Link key={singlePost._id} to={`/post/${singlePost._id}`}>
-    //                         <div className="singlePost-card">
-    //                             {/* React optimization / difference */}
-    //                             <h1>{singlePost.name}</h1>
-    //                             <img alt=""src={singlePost.image} />
-    //                             <h3>{singlePost.title}</h3>
-    //                         </div>
-    //                     </Link>
-    //                 )
-    //             })
-    //             }
-    //         </section>
-    //     </>
-    //     )
-    // }
-
-    // const loading = () => (
-    //     <section className="post-list">
-    //         <h1>
-    //             Loading...
-    //             <span>
-    //                 <img alt=""
-    //                     className="spinner"
-    //                     src="https://freesvg.org/img/1544764567.png"
-    //                 />
-    //             </span>
-    //         </h1>
-    //     </section>
-    // );
-
     useEffect(() => {
         getPost()
     }, [])
 
 
-   
+
     
     // useEffect takes two arguments -> runs function upon component mount
     // react mount -> 
-   
+
     return (
         <div>
     <h1>Create Post</h1>
     <section className='postForm'>
-            <form onSubmit={handleSubmit}>
+            <form>
                 <div>
                     <label htmlFor='name'>
                         Name:
@@ -168,7 +135,7 @@ const Post = (props) => {
                         />
                     </label>
                     <br />
-                    <input className='button' type="submit" value="Create a Post" />
+                    <input className='button'onClick={() => handleSubmit()} type="submit" value="Create a Post" />
                 </div>
             </form>
         </section>
