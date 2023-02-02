@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CreatePost from "../../Components/Post/CreatePost";
+import CreatePost from "../../components/Post/CreatePost";
 // import { useNavigate } from 'react-router-dom'
 
 function Feed() {
@@ -33,7 +33,7 @@ function Feed() {
   async function handleCommentSubmit(postId, comment) {
     try {
       // Send the comment to the backend API
-      const res = await fetch(`http://localhost:4000/post/comments/${postId}`, {
+      const res = await fetch(`http://localhost:4000/comment/`, {
         method: "POST",
         body: JSON.stringify({ comment }),
       });
@@ -75,7 +75,7 @@ function Feed() {
           <h3>{post._id }</h3>
           <p>{post.description}</p>
           <form onSubmit={(event) => handleCommentSubmit(post.id, event.target.comment.value)}>
-            <input type="text" name="comment" />
+            <input name="text" comment="comment" />
             <button onClick={() => handleCommentSubmit(post._id)} type="submit" >Comment</button>
           </form>
           <button onClick={() => handleDeletePost(post._id)}>Delete</button>
