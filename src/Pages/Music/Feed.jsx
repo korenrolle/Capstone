@@ -22,20 +22,20 @@ function Feed() {
       console.error(error);
     }
   }
-
   useEffect(() => {
     fetchPosts();
   }, []);
+
+
+  
 
   // Function to handle a comment submission for a post
   async function handleCommentSubmit(postId, comment) {
     try {
       // Send the comment to the backend API
-      const res = await fetch(`http://localhost:4000/post/${postId}/comments`, {
+      const res = await fetch(`http://localhost:4000/post/comments/${postId}`, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        
         body: JSON.stringify({ comment }),
       });
       if (!res.ok) {
@@ -47,7 +47,7 @@ function Feed() {
       console.error(error);
     }
   }
-
+  
   // Function to handle delete a post
   async function handleDeletePost(postId) {
     try {
@@ -65,7 +65,7 @@ function Feed() {
       console.error(error);
     }
   }
-
+  
   return (
     <div>
       <CreatePost fetchPosts={fetchPosts} />
@@ -77,7 +77,7 @@ function Feed() {
           <p>{post.description}</p>
           <form onSubmit={(event) => handleCommentSubmit(post.id, event.target.comment.value)}>
             <input type="text" name="comment" />
-            <button type="submit">Comment</button>
+            <button onClick={() => handleCommentSubmit(post._id)} type="submit" >Comment</button>
           </form>
           <button onClick={() => handleDeletePost(post._id)}>Delete</button>
         </div>
