@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import CommentList from "../../components/CommentList/CommentList";
 import CreatePost from "../../components/Post/CreatePost";
 import MusicPlayer from "./MusicPlayer";
 // import { useNavigate } from 'react-router-dom'
@@ -84,6 +85,7 @@ function Feed() {
           <button onClick={() => handleDeletePost(post._id)}>Delete</button>
         </div>
       ))}
+      <CommentList />
     </div>
     </div>
   );
