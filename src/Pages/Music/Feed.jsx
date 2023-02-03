@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CreatePost from "../../components/Post/CreatePost";
+import MusicPlayer from "./MusicPlayer";
 // import { useNavigate } from 'react-router-dom'
 
 function Feed() {
@@ -67,6 +68,8 @@ function Feed() {
   
   return (
     <div>
+      <div><MusicPlayer/></div>
+      <div>
       <CreatePost fetchPosts={fetchPosts} />
       {posts.map((post) => (
         <div key={post._id}>
@@ -81,6 +84,7 @@ function Feed() {
           <button onClick={() => handleDeletePost(post._id)}>Delete</button>
         </div>
       ))}
+    </div>
     </div>
   );
 }
