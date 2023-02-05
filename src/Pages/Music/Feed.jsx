@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import CommentList from "../../components/CommentList/CommentList";
+// import CommentList from "../../components/CommentList/CommentList";
 import CreatePost from "../../components/Post/CreatePost";
-import MusicPlayer from "./MusicPlayer";
+// import MusicPlayer from "./MusicPlayer";
 // import { useNavigate } from 'react-router-dom'
 
 function Feed() {
@@ -69,26 +69,21 @@ function Feed() {
   
   return (
     <div>
-      <div><MusicPlayer/></div>
       <div>
       <CreatePost fetchPosts={fetchPosts} />
       {posts.map((post) => (
         <div key={post._id}>
-          <img src={post.image} alt={post.title} />
           <h3>{post.title}</h3>
-          <h3>{post._id }</h3>
+          <img src={post.image} alt={post.title} />
           <p>{post.description}</p>
           <form onSubmit={(event) => handleCommentSubmit(post.id, event.target.comment.value)}>
-            <input name="text" comment="comment" />
-            <button onClick={() => handleCommentSubmit(post._id)} type="submit" >Comment</button>
           </form>
           <button onClick={() => handleDeletePost(post._id)}>Delete</button>
         </div>
       ))}
-      <CommentList />
+      {/* <CommentList /> */}
     </div>
     </div>
   );
 }
-
 export default Feed;

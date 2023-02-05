@@ -3,7 +3,7 @@ import * as React from 'react';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import Link from '@mui/material/Link';
+// import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
 import { Umbrella } from '@mui/icons-material';
 
@@ -14,13 +14,13 @@ function MainFeaturedPost(props) {
     <Paper
       sx={{
         position: 'relative',
-        backgroundColor: 'grey.800',
+        backgroundColor: '#aa9989',
         color: '#fff',
         mb: 4,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        backgroundImage: `url(https://i.ibb.co/QcnDws1/pexels-pixabay-268941.jpg)`,
+        // backgroundImage: `url(https://i.ibb.co/QcnDws1/pexels-pixabay-268941.jpg)`,
       }}
     >
       {/* Increase the priority of the hero background image */}
@@ -45,14 +45,14 @@ function MainFeaturedPost(props) {
             }}
           >
             <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-         Test
+              CHYLMUSIC
             </Typography>
-            <Typography variant="h5" color="inherit" paragraph>
+            {/* <Typography variant="h5" color="inherit" paragraph>
             Lorem ipsum
-            </Typography>
-            <Link variant="subtitle1" href="#">
-          link
-            </Link>
+            </Typography> */}
+            {/* <Link variant="subtitle1" href="#">
+              link
+            </Link> */}
           </Box>
         </Grid>
       </Grid>

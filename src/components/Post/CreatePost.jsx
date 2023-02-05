@@ -8,9 +8,9 @@ const Post = (props) => {
     // react state
     const [post, setPost] = useState([])
     const [newForm, setNewForm] = useState({
-        name: "",
-        image: "",
         title: "",
+        image: "",
+        description: "",
     })
     // fetch endpoint
     const BASE_URL = "http://localhost:4000/post/"
@@ -69,9 +69,9 @@ const Post = (props) => {
             console.log(post)
             // reset newForm state so that our form empties out
             setNewForm({
-                name: "",
-                image: "",
                 title: "",
+                image: "",
+                description: "",
             })
             // getPost()
             
@@ -97,14 +97,14 @@ const Post = (props) => {
     <section className='postForm'>
             <form>
                 <div>
-                    <label htmlFor='name'>
-                        Name:
+                    <label htmlFor='title'>
+                        Title:
                         <input
                             type="text"
-                            id="name"
-                            name="name"
-                            placeholder="post name"
-                            value={newForm.name}
+                            id="title"
+                            name="title"
+                            placeholder="Track Title"
+                            value={newForm.title}
                             onChange={handleChange}
                         />
                     </label>
@@ -123,14 +123,14 @@ const Post = (props) => {
                     </label>
                 </div>
                 <div>
-                    <label htmlFor='title'>
-                        Title:
+                    <label htmlFor='description'>
+                        Description:
                         <input
                             type="text"
-                            id="title"
-                            name="title"
-                            placeholder="post title"
-                            value={newForm.title}
+                            id="description"
+                            name="description"
+                            placeholder="post description"
+                            value={newForm.description}
                             onChange={handleChange}
                         />
                     </label>

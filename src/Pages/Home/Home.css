@@ -23,3 +23,21 @@
   font-weight: bold;
   color: blue;
 }
+
+.home-links{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+a:hover{
+  color: #aa9989;
+}
+
+a, a:focus, a:active {
+  text-decoration: none;
+  color: white;
+}

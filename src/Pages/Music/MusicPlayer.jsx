@@ -77,7 +77,7 @@ const TinyText = styled(Typography)({
   letterSpacing: 0.2,
 });
 
-export default function MusicPlayerSlider() {
+export default function MusicPlayerSlider(props) {
   const theme = useTheme();
   const duration = 200; // seconds
   const [position, setPosition] = React.useState(32);
@@ -96,19 +96,19 @@ export default function MusicPlayerSlider() {
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
           <CoverImage>
             <img
-              alt="can't win - Chilling Sunday"
-              src="/static/images/sliders/chilling-sunday.jpg"
+              alt="cover"
+              src={props.coverImage}
             />
           </CoverImage>
           <Box sx={{ ml: 1.5, minWidth: 0 }}>
             <Typography variant="caption" color="text.secondary" fontWeight={500}>
-              Jun Pulse
+              {props.artist}
             </Typography>
             <Typography noWrap>
               <b>คนเก่าเขาทำไว้ดี (Can&apos;t win)</b>
             </Typography>
             <Typography noWrap letterSpacing={-0.25}>
-              Chilling Sunday &mdash; คนเก่าเขาทำไว้ดี
+              {props.title} &mdash; คนเก่าเขาทำไว้ดี
             </Typography>
           </Box>
         </Box>
