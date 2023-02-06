@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 // import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
-import { Umbrella } from '@mui/icons-material';
+// import { Umbrella } from '@mui/icons-material';
 
 function MainFeaturedPost(props) {
   // const { post } = props;
@@ -20,11 +20,11 @@ function MainFeaturedPost(props) {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        // backgroundImage: `url(https://i.ibb.co/QcnDws1/pexels-pixabay-268941.jpg)`,
+        backgroundImage: `url("https://i.ibb.co/wR6gZyt/pexels-janko-ferlic-590478.jpg")`,
       }}
     >
       {/* Increase the priority of the hero background image */}
-      <img style={{ display: 'none' }} src={'https://i.ibb.co/QcnDws1/pexels-pixabay-268941.jpg'} alt={Umbrella} />
+      <img style={{ display: 'none' }} src={"https://i.ibb.co/wR6gZyt/pexels-janko-ferlic-590478.jpg"} alt="umbrella"/>
       <Box
         sx={{
           position: 'absolute',

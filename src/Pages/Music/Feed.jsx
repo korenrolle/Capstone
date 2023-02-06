@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 // import CommentList from "../../components/CommentList/CommentList";
 import CreatePost from "../../components/Post/CreatePost";
+// import AlbumDetails from "./AlbumDetails";
 // import MusicPlayer from "./MusicPlayer";
 // import { useNavigate } from 'react-router-dom'
+// import { useParams } from "react-router-dom";
 
 function Feed() {
   // State for the list of posts
   const [posts, setPosts] = useState([]);
+
+  // const params = useParams();
+  // console.log(params)
   
   // const navigate = useNavigate()
 
@@ -66,20 +72,20 @@ function Feed() {
       console.error(error);
     }
   }
-  
+  console.log(posts)
   return (
     <div>
       <div>
       <CreatePost fetchPosts={fetchPosts} />
-      {posts.map((post) => (
+      {posts.map((post) => ( 
         <div key={post._id}>
           <h3>{post.title}</h3>
-          <img src={post.image} alt={post.title} />
-          <p>{post.description}</p>
-          <form onSubmit={(event) => handleCommentSubmit(post.id, event.target.comment.value)}>
+          <Link to={`/music/${post._id}`}><img src={post.image} alt={post.title} /></Link>
+          {/* <AlbumDetails description={post.description} id={post._id}/> */}
+          <form onSubmit={(event) => handleCommentSubmit(post._id, event.target.comment.value)}>
           </form>
           <button onClick={() => handleDeletePost(post._id)}>Delete</button>
-        </div>
+        </div >
       ))}
       {/* <CommentList /> */}
     </div>

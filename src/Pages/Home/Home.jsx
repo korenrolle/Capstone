@@ -19,18 +19,7 @@
         import MusicPlayer from "../Music/MusicPlayer";
 
                 
-        function Copyright() {
-          return (
-            <Typography variant="body2" color="white" align="center">
-              {'Copyright © '}
-              <Link color="white" href="https://mui.com/">
-                ChylMusic
-              </Link>{' '}
-              {new Date().getFullYear()}
-              {'.'}
-            </Typography>
-          );
-        }
+        
         
         const cards =
         [
@@ -40,7 +29,7 @@
         title: 'Dreams',
         description: 'A dreamy ballad that takes the listener on a journey through emotions',
         mp3: 'Dreams.mp3',
-        coverImage: 'Dreams_cover.jpg',
+        coverImage: 'https://i.ibb.co/kx0F1x7/pexels-pixabay-260024.jpg',
         backgroundColor: '#645451'
         },
         {
@@ -49,7 +38,7 @@
         title: 'Dancing in the Rain',
         description: 'A happy and energetic track about the joys of dancing in the rain',
         mp3: 'Dancing_in_the_Rain.mp3',
-        coverImage: 'Dancing_in_the_Rain_cover.jpg',
+        coverImage: 'https://i.ibb.co/ryxQmjd/pexels-lanyjade-mondou-14923853.jpg',
         backgroundColor: '#aa9989'
         },
         {
@@ -58,7 +47,7 @@
         title: 'Lonely Nights',
         description: 'A soulful ballad that captures the feeling of loneliness',
         mp3: 'Lonely_Nights.mp3',
-        coverImage: 'Lonely_Nights_cover.jpg',
+        coverImage: 'https://i.ibb.co/QJMNR18/pexels-miguel-a-padrin-a-n-3391932.jpg',
         backgroundColor: '#2d2521'
         },
         {
@@ -67,7 +56,7 @@
         title: 'The Ocean',
         description: 'An uplifting track that evokes the feeling of being at the beach',
         mp3: 'The_Ocean.mp3',
-        coverImage: 'The_Ocean_cover.jpg',
+        coverImage: 'https://i.ibb.co/680P6xH/pexels-angela-roma-7480273.jpg',
         backgroundColor: '#645451'
         },
         {
@@ -76,7 +65,7 @@
         title: 'Lost Without You',
         description: 'A heartfelt ballad about the struggles of being without a loved one',
         mp3: 'Lost_Without_You.mp3',
-        coverImage: 'Lost_Without_You_cover.jpg',
+        coverImage: 'https://i.ibb.co/yRJs0Md/pexels-meryem-11960199-1.jpg',
         backgroundColor: '#aa9989'
         },
         {
@@ -85,27 +74,9 @@
         title: 'Happy Together',
         description: 'A joyful track that celebrates love and togetherness',
         mp3: 'Happy_Together.mp3',
-        coverImage: 'Happy_Together_cover.jpg',
+        coverImage: 'https://i.ibb.co/xgfxMDh/pexels-anna-holodna-12528815.jpg',
         backgroundColor: '#2d2521'
         },
-        {
-        id: 7,
-        artist: 'Chylmusic',
-        title: 'Under the Stars',
-        description: 'A dreamy and romantic track about stargazing with a loved one',
-        mp3: 'Under_the_Stars.mp3',
-        coverImage: 'Under_the_Stars_cover.jpg',
-        backgroundColor: '#645451'
-        },
-        {
-        id: 8,
-        artist: 'Chylmusic',
-        title: 'Road Trip',
-        description: 'An upbeat track that evokes the feeling of going on a road trip',
-        mp3: 'Road_Trip.mp3',
-        coverImage: 'Road_Trip_cover.jpg',
-        backgroundColor: '#aa9989'
-        }
         ];
         
         const theme = createTheme();
@@ -186,19 +157,22 @@
                       color="white"
                       gutterBottom
                     >
-                     Feed
+                     Music
                     </Typography>
                   <Grid container spacing={4}>
                     {cards.map((card) => (
                       <Grid item key={card.id} xs={12} sm={6} md={4}>
                         <Card
-                          sx={{ height: '100%', display: 'flex', flexDirection: 'column', backgroundColor: `${card.backgroundColor}`, color: 'white' }}
+                          sx={{ height: '100%', display: 'flex', flexDirection: 'column',justifyContent:'center', backgroundColor: `${card.backgroundColor}`, color: 'white' }}
                         >
                           <CardMedia
                             component="img"
                             sx={{
                               // 16:9
-                              pt: '56.25%',
+                              width: '175px',
+                              height: '125px',
+                              pt: '20.25%',
+                              pl: '15.25%'
                             }}
                             image={card.coverImage}
                             alt="cover"
@@ -257,20 +231,7 @@
                 </Box>
               </main>
               {/* Footer */}
-              <Box sx={{ bgcolor: 'black', p: 6 }} component="footer">
-                <Typography variant="h6" align="center" gutterBottom sx={{color: "white"}}>
-                  Footer
-                </Typography>
-                <Typography
-                  variant="subtitle1"
-                  align="center"
-                  color="white"
-                  component="p"
-                >
-                  Something here to give the footer a purpose!
-                </Typography>
-                <Copyright />
-              </Box>
+              
               {/* End footer */}
             </ThemeProvider>
           );

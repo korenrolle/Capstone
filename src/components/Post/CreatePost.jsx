@@ -1,4 +1,4 @@
-// import './Post.css'
+import './style/post.css'
 import { useState, useEffect } from 'react'
 // import { Link } from 'react-router-dom'
 // import { useParams } from 'react-router-dom'
@@ -116,7 +116,7 @@ const Post = (props) => {
                             type="text"
                             id="image"
                             name="image"
-                            placeholder="post image"
+                            placeholder="Post Image"
                             value={newForm.image}
                             onChange={handleChange}
                         />
@@ -129,7 +129,7 @@ const Post = (props) => {
                             type="text"
                             id="description"
                             name="description"
-                            placeholder="post description"
+                            placeholder="Post Description"
                             value={newForm.description}
                             onChange={handleChange}
                         />
