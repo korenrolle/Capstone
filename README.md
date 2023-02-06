@@ -62,20 +62,6 @@ ScreenShots
 
 # MVP Goals + Stretch Goals:
 
-ERD
-
-+-----------------+ +------------+
-| User | | Post |
-+-----------------+ +------------+
-| |---------------->| |
-+-----------------+ +------------+
-|
-+-----------------+ +------------+
-| Comment | | |
-+-----------------+ +------------+
-| |---------------->| |
-+-----------------+ +------------+
-
 Home-Page: Displays a brief introduction to ChylMusic, a banner image, and a quote as an musician.
 
 Biography:A glimpse into me an as artist/musician.
