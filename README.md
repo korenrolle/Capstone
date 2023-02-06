@@ -1,6 +1,8 @@
 Welcome to my music page! Here you can explore my music and find out more about me as an artist.
 
 <strong>Features</strong>
+
+
 Create posts on the forum and interact with other users
 Full CRUD functionality for comments on the forum
 Learn more about me through my biography and listen to my music
@@ -8,22 +10,27 @@ Connect with me through my social media and contact page
 Getting Started
 To get started with the Music Page, simply visit the site and start exploring! You can create a post on the forum, leave comments and interact with other users, learn more about me through my biography and music, and connect with me through my social media and contact page.
 
-Forum
+<strong>Forum</strong>
 The forum is a place for you to share your thoughts and connect with other fans of my music. You can create a post, leave comments and reply to others, and have full control over your comments with CRUD functionality.
 
-Biography
+<strong>Biography</strong>
+
 Get to know me better through my biography page. Here, I share my background and journey as a musician, as well as what inspires me and drives my passion for music.
 
-Music
+<strong>Music</strong>
+
+
 Listen to my music and experience my sound and style. From heartfelt ballads to upbeat tracks, there's something for everyone on my music page.
 
-Social Media/Contact
+<strong>Social Media/Contact</strong>
+
+
 Connect with me on my social media and contact page. Stay up-to-date on my latest projects and events, and reach out to me directly with any questions or comments.
 
-Conclusion
+<strong>Conclusion</strong>
 I hope you enjoy my music page and all it has to offer. Whether you're a long-time fan or discovering my music for the first time, I'm thrilled to share it with you. Thank you for visiting!
 
-Technologies Used
+<strong>Technologies Used </strong>
 The following technologies were used to build this website:
 
 HTML
