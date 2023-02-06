@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from 'react'
 import { useEffect } from 'react';
 import { useParams } from 'react-router';
@@ -31,6 +32,7 @@ export default function AlbumDetails(props) {
     if(id){
       fetchDetails();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[id])
 
   const { description, image } = comment;
