@@ -2,7 +2,7 @@ Welcome to my Music Page!
 Here you can explore my music and find out more about me as an artist.
 
 Features
-Create posts on the forum and interact with other users
+Create posts on the forum and interact with other users<br>
 Full CRUD functionality for comments on the forum
 Learn more about me through my biography and listen to my music
 Connect with me through my social media and contact page
