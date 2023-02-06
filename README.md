@@ -99,9 +99,6 @@ As a user, I want to be able to see the number of visitors on the musician's web
 As a user, I want to be able to receive updates from the musician about their music and upcoming shows through the website.<== stretch
 As a user, I want the website to be secure and protect my personal information when I make a purchase or leave a comment.<== stretch
 
-Wireframes
-<img width="1085" alt="Screen Shot 2023-01-29 at 6 02 55 PM" src="https://user-images.githubusercontent.com/115126618/215372532-b0994308-dec1-4c01-ab63-2350d51cfc93.png">
-<img width="1091" alt="Screen Shot 2023-01-29 at 6 02 40 PM" src="https://user-images.githubusercontent.com/115126618/215372536-1367bce9-2d06-4c44-85f1-8bfe638b175c.png">
 
 Milestones-
 
