@@ -1,30 +1,30 @@
 Welcome to my Music Page!
 Here you can explore my music and find out more about me as an artist.
 
-Features
+Features<br>
 Create posts on the forum and interact with other users<br>
-Full CRUD functionality for comments on the forum
-Learn more about me through my biography and listen to my music
+Full CRUD functionality for comments on the forum<br>
+Learn more about me through my biography and listen to my music<br>
 Connect with me through my social media and contact page
-Getting Started
-To get started with the Music Page, simply visit the site and start exploring! You can create a post on the forum, leave comments and interact with other users, learn more about me through my biography and music, and connect with me through my social media and contact page.
+Getting Started<br>
+To get started with the Music Page, simply visit the site and start exploring! You can create a post on the forum, leave comments and interact with other users, learn more about me through my biography and music, and connect with me through my social media and contact page.<br>
 
-Forum
-The forum is a place for you to share your thoughts and connect with other fans of my music. You can create a post, leave comments and reply to others, and have full control over your comments with CRUD functionality.
+Forum<br>
+The forum is a place for you to share your thoughts and connect with other fans of my music. You can create a post, leave comments and reply to others, and have full control over your comments with CRUD functionality.<br>
 
-Biography
-Get to know me better through my biography page. Here, I share my background and journey as a musician, as well as what inspires me and drives my passion for music.
+Biography<br>
+Get to know me better through my biography page. Here, I share my background and journey as a musician, as well as what inspires me and drives my passion for music.<br>
 
-Music
-Listen to my music and experience my sound and style. From heartfelt ballads to upbeat tracks, there's something for everyone on my music page.
+Music<br>
+Listen to my music and experience my sound and style. From heartfelt ballads to upbeat tracks, there's something for everyone on my music page.<br>
 
-Social Media/Contact
-Connect with me on my social media and contact page. Stay up-to-date on my latest projects and events, and reach out to me directly with any questions or comments.
+Social Media/Contact<br>
+Connect with me on my social media and contact page. Stay up-to-date on my latest projects and events, and reach out to me directly with any questions or comments.<br>
 
-Conclusion
-I hope you enjoy my music page and all it has to offer. Whether you're a long-time fan or discovering my music for the first time, I'm thrilled to share it with you. Thank you for visiting!
+Conclusion<br>
+I hope you enjoy my music page and all it has to offer. Whether you're a long-time fan or discovering my music for the first time, I'm thrilled to share it with you. Thank you for visiting!<br>
 
-Technologies Used
+Technologies Used<br>
 The following technologies were used to build this website:
 
 HTML
