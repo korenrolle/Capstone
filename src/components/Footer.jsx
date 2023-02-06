@@ -30,7 +30,7 @@ function Footer(props) {
     color="white"
     component="p"
   >
-    Something here to give the footer a purpose!
+    All rights reserved
   </Typography>
   <Copyright />
 </Box></div>;

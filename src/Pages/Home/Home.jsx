@@ -10,16 +10,33 @@
         import Grid from '@mui/material/Grid';
         import Stack from '@mui/material/Stack';
         import Box from '@mui/material/Box';
-        import Toolbar from '@mui/material/Toolbar';
+        // import Toolbar from '@mui/material/Toolbar';
         import Typography from '@mui/material/Typography';
         import Container from '@mui/material/Container';
         import { Link } from 'react-router-dom';
         import { createTheme, ThemeProvider } from '@mui/material/styles';
         import './Home.css'
-        import MusicPlayer from "../Music/MusicPlayer";
+        // import MusicPlayer from "../Music/MusicPlayer";
+        import Radio from '../../components/Player/Player';
 
                 
-        
+        const mp3List = [
+          {
+            title: "Song 1",
+            src: "https://file-examples.com/storage/feeb72b10363daaeba4c0c9/2017/11/file_example_MP3_700KB.mp3",
+            cover: "https://i.ibb.co/QJMNR18/pexels-miguel-a-padrin-a-n-3391932.jpg",
+          },
+          {
+            title: "Song 2",
+            src: "https://file-examples.com/storage/feeb72b10363daaeba4c0c9/2017/11/file_example_WAV_1MG.wav",
+            cover: "https://i.ibb.co/yRJs0Md/pexels-meryem-11960199-1.jpg",
+          },
+          {
+            title: "Song 3",
+            src: "https://file-examples.com/storage/feeb72b10363daaeba4c0c9/2017/11/file_example_MP3_700KB.mp3", 
+            cover: "https://i.ibb.co/xgfxMDh/pexels-anna-holodna-12528815.jpg",
+          },
+        ];
         
         const cards =
         [
@@ -84,33 +101,6 @@
         export default function Album() {
           return (
             <ThemeProvider theme={theme}>
-                <Toolbar>
-      <div className="home-links">
-        <Link to="/biography" className="home-link">
-          <div className="link-text">
-            <h3>Biography</h3>
-          </div>
-        </Link>
-        <Link to="/upcoming-shows" className="home-link">
-          <div className="link-text">
-            <h3>Upcoming Shows</h3>
-            {/* <p>See where ChylMusic is performing next</p> */}
-          </div>
-        </Link>
-        <Link to="/music" className="home-link">
-          <div className="link-text">
-            <h3>Music</h3>
-            {/* <p>Listen to ChylMusic's latest tracks and albums</p> */}
-          </div>
-        </Link>
-        <Link to="/gallery" className="home-link">
-          <div className="link-text">
-            <h3>Gallery</h3>
-            {/* <p>View photos of ChylMusic's performances and events</p> */}
-          </div>
-        </Link>
-        </div>
-                </Toolbar>
               <main>
                 <Box
                   sx={{
@@ -142,11 +132,11 @@
                       spacing={2}
                       justifyContent="center"
                     >
-                      <Button sx={{ bgcolor: '#2d2521', color: "white", '&:hover': {backgroundColor: "#aa9989"}}} variant="contained">Check Out Our Chat Feed</Button>
+                      <Link to='/music' variant="contained">Check Out Our Forum</Link>
                     </Stack>
                     
                   </Container>
-                  <Container><MusicPlayer/></Container>
+                  <Radio mp3List={mp3List} />
                 </Box>
                 <Container sx={{ py: 8 }} maxWidth="md">
                   {/* End hero unit */}
@@ -157,7 +147,7 @@
                       color="white"
                       gutterBottom
                     >
-                     Music
+                     Music Exhibit
                     </Typography>
                   <Grid container spacing={4}>
                     {cards.map((card) => (
@@ -186,8 +176,8 @@
                             </Typography>
                           </CardContent>
                           <CardActions>
-                            <Button size="small">View</Button>
-                            <Button size="small">Edit</Button>
+                            {/* <Button size="small">View</Button>
+                            <Button size="small">Edit</Button> */}
                           </CardActions>
                         </Card>
                       </Grid>

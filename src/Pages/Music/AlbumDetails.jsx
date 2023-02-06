@@ -30,6 +30,7 @@ export default function AlbumDetails(props) {
 
   return (
     <div>
+      <h1>Post Description</h1>
       <p>{description}</p>
       <CommentList/>
     </div>

@@ -6,11 +6,15 @@ import Grid from '@mui/material/Grid';
 // import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
 // import { Umbrella } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
+import Toolbar from '@mui/material/Toolbar';
+
 
 function MainFeaturedPost(props) {
   // const { post } = props;
 
   return (
+    <div>
     <Paper
       sx={{
         position: 'relative',
@@ -57,6 +61,33 @@ function MainFeaturedPost(props) {
         </Grid>
       </Grid>
     </Paper>
+                    <Toolbar>
+                    <div className="home-links">
+                    <Link to="/" className="home-link">
+                        <div className="link-text">
+                          <h3>Home</h3>
+                        </div>
+                      </Link>
+                      <Link to="/biography" className="home-link">
+                        <div className="link-text">
+                          <h3>Biography</h3>
+                        </div>
+                      </Link>
+                    
+                      <Link to="/music" className="home-link">
+                        <div className="link-text">
+                          <h3>Forum</h3>
+                          {/* <p>Listen to ChylMusic's latest tracks and albums</p> */}
+                        </div>
+                      </Link>
+                      <Link to="/gallery" className="home-link">
+                        <div className="link-text">
+                          <h3>Contact Me</h3>
+                          {/* <p>View photos of ChylMusic's performances and events</p> */}
+                        </div>
+                      </Link>
+                      </div>
+                              </Toolbar></div>
   );
 }
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./style/commentList.css"
 
 const CommentList = () => {
   const [comments, setComments] = useState([]);
@@ -86,19 +87,19 @@ const CommentList = () => {
 
   return (
     <div>
-      <input type="text" value={name} onChange={e => setName(e.target.value)} placeholder="Name" />
-      <textarea value={newComment} onChange={e => setNewComment(e.target.value)} placeholder="Comment" />
+      <input className="input" type="text" value={name} onChange={e => setName(e.target.value)} placeholder="Name" />
+      <textarea className="input" value={newComment} onChange={e => setNewComment(e.target.value)} placeholder="Comment" />
       <button onClick={handleAddComment}>Add Comment</button>
       <ul>
         {comments.map(comment => (
           <li key={comment._id}>
-            <p>Name: {comment.name}</p>
-            <p>Comment: {comment.comment}</p>
+            <p className="name">Name: {comment.name}</p>
+            <p className="name">Comment: {comment.comment}</p>
             <button onClick={() => handleDeletePost(comment._id)}>Delete</button>
             <button onClick={() => handleUpdatePost(comment._id)}>Update</button>
             {isEditing && comment._id === postId ? (
               <div>
-                <input
+                <input className="input"
                   type="text"
                   value={updatedComment}
                   onChange={e => setUpdatedComment(e.target.value)}

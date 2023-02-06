@@ -99,7 +99,7 @@ const Post = (props) => {
                 <div>
                     <label htmlFor='title'>
                         Title:
-                        <input
+                        <input className='postInput'
                             type="text"
                             id="title"
                             name="title"
@@ -112,7 +112,7 @@ const Post = (props) => {
                 <div>
                     <label htmlFor='image'>
                         Image:
-                        <input
+                        <input className='postInput'
                             type="text"
                             id="image"
                             name="image"
@@ -125,7 +125,7 @@ const Post = (props) => {
                 <div>
                     <label htmlFor='description'>
                         Description:
-                        <input
+                        <input className='postInput'
                             type="text"
                             id="description"
                             name="description"

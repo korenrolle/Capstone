@@ -1,74 +1,36 @@
-import React, { useState, useRef } from "react";
-import makeStyles from '@mui/styles/makeStyles';
-import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
-import PauseCircleOutlineIcon from "@material-ui/icons/PauseCircleOutline";
-import IconButton from "@material-ui/core/IconButton";
-import ReactPlayer from "react-player";
+import React, { useState } from "react";
+import './style/player.css'
 
-const useStyles = makeStyles((theme) => ({
-  playerContainer: {
-    display: "flex",
-    alignItems: "center",
-    marginTop: theme.spacing(2),
-    "& .MuiIconButton-root": {
-      animation: "$pulse 1s ease-in-out infinite",
-    },
-  },
-  "@keyframes pulse": {
-    "0%": {
-      transform: "scale(1)",
-    },
-    "50%": {
-      transform: "scale(1.1)",
-    },
-    "100%": {
-      transform: "scale(1)",
-    },
-  },
-}));
-
-function App() {
-  const classes = useStyles();
-  const [url, setUrl] = useState(null);
-  const [playing, setPlaying] = useState(false);
-  const playerRef = useRef(null);
-
-  const handleClick = (event) => {
-    setUrl(URL.createObjectURL(event.target.files[0]));
-  };
-
-  const handlePlayPause = () => {
-    setPlaying(!playing);
-    if (playing) {
-      playerRef.current.pause();
-    } else {
-      playerRef.current.play();
-    }
-  };
+const Radio = ({ mp3List }) => {
+  const [selectedMp3, setSelectedMp3] = useState(mp3List[0]);
 
   return (
-    <div>
-      <input type="file" accept="audio/*" onChange={handleClick} />
-      {url ? (
-        <div className={classes.playerContainer}>
-          <ReactPlayer
-            ref={playerRef}
-            url={url}
-            playing={playing}
-            width="0"
-            height="0"
-          />
-          <IconButton onClick={handlePlayPause}>
-            {playing ? (
-              <PauseCircleOutlineIcon fontSize="large" />
-            ) : (
-              <PlayCircleOutlineIcon fontSize="large" />
-            )}
-          </IconButton>
-        </div>
-      ) : null}
+    <div className="radio-container">
+      <div className="title">Radio</div>
+      <div className="mp3-list">
+        {mp3List.map((mp3) => (
+          <div key={mp3.src} className="mp3">
+            <input
+              type="radio"
+              name="mp3"
+              id={mp3.src}
+              value={mp3.src}
+              checked={selectedMp3 === mp3}
+              onChange={() => setSelectedMp3(mp3)}
+            />
+            <label htmlFor={mp3.src}>
+              <div className="cover">
+                <img src={mp3.cover} alt={mp3.title} />
+              </div>
+              <div className="title">{mp3.title}</div>
+            </label>
+          </div>
+        ))}
+      </div>
+      <audio src={selectedMp3.src} controls />
     </div>
   );
-}
+};
 
-export default App;
+export default Radio;
+
