@@ -37,9 +37,13 @@ As a user, I want to be able to see the number of visitors on the musician's web
 As a user, I want to be able to receive updates from the musician about their music and upcoming shows through the website.<== stretch
 As a user, I want the website to be secure and protect my personal information when I make a purchase or leave a comment.<== stretch
 
-Wireframes
-<img width="1085" alt="Screen Shot 2023-01-29 at 6 02 55 PM" src="https://user-images.githubusercontent.com/115126618/215372532-b0994308-dec1-4c01-ab63-2350d51cfc93.png">
-<img width="1091" alt="Screen Shot 2023-01-29 at 6 02 40 PM" src="https://user-images.githubusercontent.com/115126618/215372536-1367bce9-2d06-4c44-85f1-8bfe638b175c.png">
+ScreenShots
+<img width="1680" alt="Screen Shot 2023-02-06 at 7 38 32 AM" src="https://user-images.githubusercontent.com/115126618/217016506-d2c4a36d-937e-49aa-b97b-fc233b984442.png">
+<img width="1680" alt="Screen Shot 2023-02-06 at 7 38 24 AM" src="https://user-images.githubusercontent.com/115126618/217016559-613517b0-7ce2-427c-9c1c-191af742fba9.png">
+<img width="1680" alt="Screen Shot 2023-02-06 at 7 38 15 AM" src="https://user-images.githubusercontent.com/115126618/217016564-3994b806-9a2d-42cd-9fe1-47fd81d84125.png">
+<img width="1680" alt="Screen Shot 2023-02-06 at 7 38 10 AM" src="https://user-images.githubusercontent.com/115126618/217016567-185db819-63f3-4f99-9446-1e872ef29a44.png">
+
+
 
 Milestones-
 
