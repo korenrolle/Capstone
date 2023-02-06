@@ -1,6 +1,6 @@
 Welcome to my music page! Here you can explore my music and find out more about me as an artist.
 
-Features
+<strong>Features</strong>
 Create posts on the forum and interact with other users
 Full CRUD functionality for comments on the forum
 Learn more about me through my biography and listen to my music
@@ -22,6 +22,18 @@ Connect with me on my social media and contact page. Stay up-to-date on my lates
 
 Conclusion
 I hope you enjoy my music page and all it has to offer. Whether you're a long-time fan or discovering my music for the first time, I'm thrilled to share it with you. Thank you for visiting!
+
+Technologies Used
+The following technologies were used to build this website:
+
+HTML
+CSS
+JavaScript
+ReactJS
+NodeJS
+Express
+MongoDB
+Material UI (for UI components)
 
 ScreenShots
 <img width="1680" alt="Screen Shot 2023-02-06 at 7 38 32 AM" src="https://user-images.githubusercontent.com/115126618/217016506-d2c4a36d-937e-49aa-b97b-fc233b984442.png">
