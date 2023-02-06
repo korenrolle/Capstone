@@ -1,0 +1,29 @@
+.contact {
+  text-align: center;
+  padding: 30px;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact li {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.contact .icon {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.contact a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}

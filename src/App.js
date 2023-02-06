@@ -9,6 +9,7 @@ import Biography from './Pages/Biography/Biography';
 // import Gallery from './Pages/Gallery/Gallery';
 import Feed from './Pages/Music/Feed';
 import AlbumDetails from './Pages/Music/AlbumDetails';
+import Contact from './Pages/Gallery/Contact';
 // import Player from './components/Player/Player';
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
         <Route path="/biography" element={<Biography />} />
         <Route path="/music" element={<Feed />} />
         <Route path="/music/:id" element={<AlbumDetails />} />
-        {/* <Route path="/gallery" element={<Player />} /> */}
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>
