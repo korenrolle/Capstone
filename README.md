@@ -1,38 +1,30 @@
-Welcome to my music page! Here you can explore my music and find out more about me as an artist.
+Welcome to my Music Page!
+Here you can explore my music and find out more about me as an artist.
 
-<strong>Features</strong>
-
-
+Features
 Create posts on the forum and interact with other users
 Full CRUD functionality for comments on the forum
 Learn more about me through my biography and listen to my music
 Connect with me through my social media and contact page
-
-
 Getting Started
 To get started with the Music Page, simply visit the site and start exploring! You can create a post on the forum, leave comments and interact with other users, learn more about me through my biography and music, and connect with me through my social media and contact page.
 
-<strong>Forum</strong>
+Forum
 The forum is a place for you to share your thoughts and connect with other fans of my music. You can create a post, leave comments and reply to others, and have full control over your comments with CRUD functionality.
 
-<strong>Biography</strong>
-
+Biography
 Get to know me better through my biography page. Here, I share my background and journey as a musician, as well as what inspires me and drives my passion for music.
 
-<strong>Music</strong>
-
-
+Music
 Listen to my music and experience my sound and style. From heartfelt ballads to upbeat tracks, there's something for everyone on my music page.
 
-<strong>Social Media/Contact</strong>
-
-
+Social Media/Contact
 Connect with me on my social media and contact page. Stay up-to-date on my latest projects and events, and reach out to me directly with any questions or comments.
 
-<strong>Conclusion</strong>
+Conclusion
 I hope you enjoy my music page and all it has to offer. Whether you're a long-time fan or discovering my music for the first time, I'm thrilled to share it with you. Thank you for visiting!
 
-<strong>Technologies Used </strong>
+Technologies Used
 The following technologies were used to build this website:
 
 HTML
@@ -43,7 +35,6 @@ NodeJS
 Express
 MongoDB
 Material UI (for UI components)
-
 ScreenShots
 <img width="1680" alt="Screen Shot 2023-02-06 at 7 38 32 AM" src="https://user-images.githubusercontent.com/115126618/217016506-d2c4a36d-937e-49aa-b97b-fc233b984442.png">
 <img width="1680" alt="Screen Shot 2023-02-06 at 7 38 24 AM" src="https://user-images.githubusercontent.com/115126618/217016559-613517b0-7ce2-427c-9c1c-191af742fba9.png">
