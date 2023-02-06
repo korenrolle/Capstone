@@ -1,10 +1,9 @@
 import React, { Fragment } from 'react';
 import './style/biography.css';
-// import CreatePost from '../../components/Post/CreatePost';
 
 const Biography = (props) => {
     return <>
-        <h1>ChylMusic - The Soulful Storyteller</h1>
+        <h1 id="bio">ChylMusic - The Soulful Storyteller</h1>
 <p>ChylMusic is a unique and captivating artist hailing from Winston Salem, North Carolina. Growing up singing in church, he has always had a deep love for God and music. With a voice that is both soulful and powerful, ChylMusic's music is a reflection of his own experiences and emotions.</p>
 
 <p>Despite the struggles of growing up in a tough environment, ChylMusic never let his circumstances define him. He has faced homelessness and financial struggles, but through hard work and determination, he has risen above it all. He has even taken the bus for three hours to get to work, just to make ends meet.</p>

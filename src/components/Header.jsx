@@ -80,7 +80,7 @@ function MainFeaturedPost(props) {
                           {/* <p>Listen to ChylMusic's latest tracks and albums</p> */}
                         </div>
                       </Link>
-                      <Link to="/gallery" className="home-link">
+                      <Link to="/contact" className="home-link">
                         <div className="link-text">
                           <h3>Contact Me</h3>
                           {/* <p>View photos of ChylMusic's performances and events</p> */}

@@ -1,25 +1,24 @@
 # MVP Goals + Stretch Goals:
 
-Super-User Login
+ERD
 
-I will be able to log into my website and post on the "post" page
++-----------------+ +------------+
+| User | | Post |
++-----------------+ +------------+
+| |---------------->| |
++-----------------+ +------------+
+|
++-----------------+ +------------+
+| Comment | | |
++-----------------+ +------------+
+| |---------------->| |
++-----------------+ +------------+
 
-Home-Page: Displays a brief introduction to ChylMusic, a banner image, and a list of quotes as an musician.
+Home-Page: Displays a brief introduction to ChylMusic, a banner image, and a quote as an musician.
 
-+----------------+ +----------------+ +----------------+
-| Super User | | Post | | Comment |
-+----------------+ +----------------+ +----------------+
-| - id | | - id | | - id |
-| - username | | - title | | - author |
-| - password | | - body | | - text |
-| - email | | - createdAt | | - createdAt |
-+----------------+ | - updatedAt | +----------------+
-| - author (FK) |
-+----------------+
+Biography:A glimpse into me an as artist/musician.
 
-Music-Page: Features ChylMusic's discography, including album covers, tracklists, and links to purchase or stream the music. <--(stretch)
-
-Gallery: Showcases photos and videos of ChylMusic in action, including studio sessions, and behind-the-scenes footage.
+Forum: This will be the feed page. People will be able to post and comment here
 
 Contact: Provides a contact form for fans to reach out to ChylMusic and a list of ChylMusic's social media accounts.
 

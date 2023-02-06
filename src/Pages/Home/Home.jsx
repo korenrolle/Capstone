@@ -1,8 +1,6 @@
 
         import * as React from 'react';
-        // import AppBar from '@mui/material/AppBar';
-        import Button from '@mui/material/Button';
-        // import CameraIcon from '@mui/icons-material/PhotoCamera';
+      
         import Card from '@mui/material/Card';
         import CardActions from '@mui/material/CardActions';
         import CardContent from '@mui/material/CardContent';
@@ -10,29 +8,29 @@
         import Grid from '@mui/material/Grid';
         import Stack from '@mui/material/Stack';
         import Box from '@mui/material/Box';
-        // import Toolbar from '@mui/material/Toolbar';
+
         import Typography from '@mui/material/Typography';
         import Container from '@mui/material/Container';
         import { Link } from 'react-router-dom';
         import { createTheme, ThemeProvider } from '@mui/material/styles';
         import './Home.css'
-        // import MusicPlayer from "../Music/MusicPlayer";
+    
         import Radio from '../../components/Player/Player';
 
                 
         const mp3List = [
           {
-            title: "Song 1",
+            title: "Lonely Nights",
             src: "https://file-examples.com/storage/feeb72b10363daaeba4c0c9/2017/11/file_example_MP3_700KB.mp3",
             cover: "https://i.ibb.co/QJMNR18/pexels-miguel-a-padrin-a-n-3391932.jpg",
           },
           {
-            title: "Song 2",
+            title: "Lost Without you",
             src: "https://file-examples.com/storage/feeb72b10363daaeba4c0c9/2017/11/file_example_WAV_1MG.wav",
             cover: "https://i.ibb.co/yRJs0Md/pexels-meryem-11960199-1.jpg",
           },
           {
-            title: "Song 3",
+            title: "Happy Together",
             src: "https://file-examples.com/storage/feeb72b10363daaeba4c0c9/2017/11/file_example_MP3_700KB.mp3", 
             cover: "https://i.ibb.co/xgfxMDh/pexels-anna-holodna-12528815.jpg",
           },
@@ -119,12 +117,10 @@
                       color="text.primary"
                       gutterBottom
                     >
-                      Album layout
+                    
                     </Typography>
                     <Typography variant="h5" align="center" color="text.secondary" paragraph>
-                      Something short and leading about the collection below—its contents,
-                      the creator, etc. Make it short and sweet, but not too short so folks
-                      don&apos;t simply skip over it entirely.
+                    <em id="home">There will always be something holding you back, and something pulling you forward. Once you realize that you are both, tug of war stops. - ChylMusic</em>
                     </Typography>
                     <Stack
                       sx={{ pt: 4 }}
@@ -132,7 +128,7 @@
                       spacing={2}
                       justifyContent="center"
                     >
-                      <Link to='/music' variant="contained">Check Out Our Forum</Link>
+                      <button><Link to='/music' variant="contained">Check Out Our Forum</Link></button>
                     </Stack>
                     
                   </Container>
@@ -147,7 +143,7 @@
                       color="white"
                       gutterBottom
                     >
-                     Music Exhibit
+                    Music Exhibit
                     </Typography>
                   <Grid container spacing={4}>
                     {cards.map((card) => (
@@ -201,12 +197,10 @@
                       color="text.primary"
                       gutterBottom
                     >
-                     About Me
+                    About Me
                     </Typography>
-                    <Typography variant="h5" align="center" color="text.secondary" paragraph>
-                      Something short and leading about the collection below—its contents,
-                      the creator, etc. Make it short and sweet, but not too short so folks
-                      don&apos;t simply skip over it entirely.
+                    <Typography id="home" variant="h5" align="center" color="text.secondary" paragraph>
+                    ChylMusic is a unique and captivating artist hailing from Winston Salem, North Carolina....
                     </Typography>
                     <Stack
                       sx={{ pt: 4 }}

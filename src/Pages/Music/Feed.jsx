@@ -80,7 +80,7 @@ function Feed() {
       {posts.map((post) => ( 
         <div key={post._id}>
           <h3>{post.title}</h3>
-          <Link to={`/music/${post._id}`}><img src={post.image} alt={post.title} /></Link>
+          <Link to={`/music/${post._id}`}><img className="pic" src={post.image} alt={post.title} /></Link>
           {/* <AlbumDetails description={post.description} id={post._id}/> */}
           <form onSubmit={(event) => handleCommentSubmit(post._id, event.target.comment.value)}>
           </form>
