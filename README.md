@@ -7,6 +7,8 @@ Create posts on the forum and interact with other users
 Full CRUD functionality for comments on the forum
 Learn more about me through my biography and listen to my music
 Connect with me through my social media and contact page
+
+
 Getting Started
 To get started with the Music Page, simply visit the site and start exploring! You can create a post on the forum, leave comments and interact with other users, learn more about me through my biography and music, and connect with me through my social media and contact page.
 
