@@ -1,4 +1,9 @@
-Welcome to my Music Page!
+BE Link {https://github.com/korenrolle/ChylMusic}
+Deployed Link {https://mellifluous-biscotti-899545.netlify.app} 
+Please note: Recent Heroku authentication requirement has prevented mt backend from running so while full crud has been done, you will not be able to see it in action
+
+
+Welcome to my ChylMusic Page!
 Here you can explore my music and find out more about me as an artist.
 
 Features<br>
